@@ -1,0 +1,6 @@
+<div>
+  <input [(ngModel)]="projectName" placeholder="Enter project name" />
+  <button *ngIf="!project" (click)="addProject()">Add Project</button>
+  <button *ngIf="project" (click)="updateProject()">Update Project</button>
+  <button (click)="cancel.emit()">Cancel</button>
+</div>
